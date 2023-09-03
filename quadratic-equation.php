@@ -20,15 +20,14 @@ echo $start;
 
 if ($d < 0) {
     echo "<p>Відповідь: ∅.</p>";
-}
-elseif ($d === 0) {
+} elseif ($d === 0) {
     $x = -$b / (2 * $a);
     echo "<p>Відповідь: x = $x.</p>";
-}
-elseif($d > 0) {
-    $x1 = round((-$b + sqrt($d)) / (2 * $a));
-    $x2 = round((-$b - sqrt($d)) / (2 * $a));
-    echo "<p>Відповідь: x1 = $x1; x2 = $x2.</p>";
+} elseif ($d > 0) {
+    $x1 = (-$b + sqrt($d)) / (2 * $a);
+    $x2 = (-$b - sqrt($d)) / (2 * $a);
+    echo "<p>Відповідь: x1 = " . round($x1) . "; x2 = " . round($x2) . ".</p>";
+
 }
 
 $end = <<<EOD
