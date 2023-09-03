@@ -26,8 +26,7 @@ if ($d < 0) {
 } elseif ($d > 0) {
     $x1 = (-$b + sqrt($d)) / (2 * $a);
     $x2 = (-$b - sqrt($d)) / (2 * $a);
-    echo "<p>Відповідь: x1 = " . round($x1) . "; x2 = " . round($x2) . ".</p>";
-
+    echo "<p>Відповідь: x1 = $x1; x2 = $x2.</p>";
 }
 
 $end = <<<EOD
